@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ôn thi Lịch sử 12 – ASEAN</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg1:#eef1ff;--bg2:#fdf0f7;--card:rgba(255,255,255,.74);--tx:#191a2e;--mut:#666a85;--bd:rgba(120,120,170,.24);--pri:#5b5bf0;--ok:#0f9d58;--okb:rgba(34,197,94,.17);--no:#e5384b;--nob:rgba(244,63,94,.14);--sel:rgba(91,91,240,.13);--sh:0 8px 28px rgba(60,60,130,.12)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg1:#0d0f1f;--bg2:#1b1033;--card:rgba(33,35,62,.72);--tx:#eceefb;--mut:#a0a4c8;--bd:rgba(160,165,225,.2);--pri:#8f8fff;--ok:#5fd18b;--okb:rgba(34,197,94,.18);--no:#ff8a80;--nob:rgba(244,63,94,.18);--sel:rgba(143,143,255,.16);--sh:0 8px 28px rgba(0,0,0,.35)}}
+:root[data-theme="dark"]{--bg1:#0d0f1f;--bg2:#1b1033;--card:rgba(33,35,62,.72);--tx:#eceefb;--mut:#a0a4c8;--bd:rgba(160,165,225,.2);--pri:#8f8fff;--ok:#5fd18b;--okb:rgba(34,197,94,.18);--no:#ff8a80;--nob:rgba(244,63,94,.18);--sel:rgba(143,143,255,.16);--sh:0 8px 28px rgba(0,0,0,.35)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{margin:0;color:var(--tx);font:16px/1.55 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:linear-gradient(160deg,var(--bg1),var(--bg2)) fixed;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;z-index:-1;width:340px;height:340px;border-radius:50%;filter:blur(70px);opacity:.45;animation:float 14s ease-in-out infinite alternate}
+body::before{top:-90px;left:-90px;background:#8b8bff}body::after{bottom:-110px;right:-90px;background:#f0abfc;animation-delay:-6s}
+#app{max-width:720px;margin:0 auto;padding:52px 14px 96px}
+h1{font-size:26px;line-height:1.25;margin:4px 0 4px;font-weight:800}.grad{background:linear-gradient(135deg,#5b5bf0,#d946ef);-webkit-background-clip:text;background-clip:text;color:transparent}
+h2{font-size:13px;margin:22px 0 8px;color:var(--mut);font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.mut{color:var(--mut);font-size:14px}
+.card{background:var(--card);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid var(--bd);border-radius:20px;padding:16px;margin:12px 0;box-shadow:var(--sh)}
+button{font:inherit;color:inherit;cursor:pointer;transition:transform .15s,box-shadow .2s,background .2s,border-color .2s}
+button:active:not([disabled]){transform:scale(.97)}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.chip,.mode{border:1.5px solid var(--bd);background:var(--card);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-radius:14px;padding:10px 16px}
+.chip:hover,.mode:hover{transform:translateY(-2px);box-shadow:var(--sh)}
+.chip.on,.mode.on{border-color:var(--pri);background:var(--sel);font-weight:600;box-shadow:0 0 0 3px var(--sel)}
+.mode{flex:1;min-width:150px;text-align:left;font-size:17px}.mode small{display:block;font-weight:400;color:var(--mut);font-size:13px;margin-top:2px}
+.btn{background:linear-gradient(135deg,#5b5bf0,#9b5cf6 55%,#d946ef);color:#fff;border:0;border-radius:14px;padding:12px 18px;font-weight:600;box-shadow:0 6px 18px rgba(110,90,240,.38)}
+.btn:hover:not([disabled]){transform:translateY(-2px);box-shadow:0 10px 24px rgba(110,90,240,.45)}
+.btn.ghost{background:var(--card);color:var(--tx);box-shadow:none;border:1.5px solid var(--bd)}.btn[disabled]{opacity:.4;box-shadow:none}
+.big{width:100%;margin-top:20px;padding:16px;font-size:18px}
+input[type=number]{width:90px;font:inherit;padding:8px 10px;border-radius:10px;border:1.5px solid var(--bd);background:var(--card);color:var(--tx)}
+label.tg{display:flex;align-items:center;gap:10px;padding:7px 0}label.tg input{width:20px;height:20px;accent-color:var(--pri)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:14px;color:var(--mut);font-weight:600}
+.bar{height:8px;background:var(--bd);border-radius:8px;margin:10px 0 12px;overflow:hidden}.bar i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#5b5bf0,#d946ef)}
+.src{font-size:13px;color:var(--mut);margin-bottom:6px}.q{font-size:18px;font-weight:700;margin:0 0 12px;line-height:1.45}
+.quote{border-left:4px solid var(--pri);background:var(--sel);border-radius:0 12px 12px 0;padding:8px 12px;margin:8px 0;color:var(--tx);font-size:15px}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:var(--card);border:1.5px solid var(--bd);border-radius:16px;padding:12px;margin:10px 0}
+.opt:hover:not([disabled]){transform:translateX(4px);border-color:var(--pri)}
+.opt b{flex:none;width:28px;height:28px;border-radius:10px;background:var(--sel);color:var(--pri);display:grid;place-items:center;font-size:14px}
+.opt.sel{border-color:var(--pri);background:var(--sel)}.opt.ok{border-color:var(--ok);background:var(--okb)}.opt.no{border-color:var(--no);background:var(--nob)}
+.opt.ok b{background:var(--ok);color:#fff}.opt.no b{background:var(--no);color:#fff}
+.st{border:1.5px solid var(--bd);border-radius:16px;padding:12px;margin:10px 0;background:var(--card)}.st.ok{border-color:var(--ok);background:var(--okb)}.st.no{border-color:var(--no);background:var(--nob)}
+.tfb{display:flex;gap:8px;margin-top:10px}.tfb button{flex:1;border:1.5px solid var(--bd);background:transparent;border-radius:12px;padding:8px}
+.tfb button.sel{border-color:var(--pri);background:var(--sel);font-weight:700}.tfb button.ok{border-color:var(--ok);background:var(--okb);font-weight:700}.tfb button.no{border-color:var(--no);background:var(--nob);font-weight:700}
+.fb{font-size:14px;margin-top:8px;font-weight:700}
+.nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border-top:1px solid var(--bd);padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;justify-content:center;z-index:10}
+.nav>*{flex:1;max-width:220px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(46px,1fr));gap:8px;margin-top:12px}
+.g{border:1.5px solid var(--bd);background:var(--card);border-radius:12px;padding:7px 0;font-size:13px;font-weight:600}.g:hover{transform:scale(1.08)}
+.g.cur{outline:2.5px solid var(--pri);outline-offset:1px}.g.ans{background:var(--sel);border-color:var(--pri)}.g.ok{background:var(--okb);border-color:var(--ok)}.g.no{background:var(--nob);border-color:var(--no)}
+.score{text-align:center;padding:24px 16px}.score .n{font-size:68px;font-weight:800;line-height:1.1;background:linear-gradient(135deg,#5b5bf0,#d946ef);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ov{position:fixed;inset:0;z-index:40;background:rgba(10,10,30,.5);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);display:grid;place-items:center;padding:20px;animation:fade .2s}.ov .card{max-width:340px;animation:pop .35s}
+summary{cursor:pointer;font-weight:700}
+.mt{position:fixed;top:calc(8px + env(safe-area-inset-top,0px));right:12px;z-index:20;width:40px;height:40px;border-radius:50%;border:1px solid var(--bd);background:var(--card);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-size:18px;box-shadow:var(--sh)}
+.an>*:not(.nav){animation:rise .5s both}.an>*:nth-child(2){animation-delay:.06s}.an>*:nth-child(3){animation-delay:.12s}.an>*:nth-child(4){animation-delay:.18s}.an>*:nth-child(n+5){animation-delay:.24s}
+.an .opt,.an .st{animation:rise .45s both;animation-delay:calc(var(--i,0)*70ms + .15s)}.an .bar i{animation:bar .7s ease-out}
+.opt.fx.ok,.st.fx.ok{animation:pop .45s}.opt.fx.no,.st.fx.no{animation:shake .45s}
+.top{padding-right:46px;white-space:nowrap;font-size:13px}.nav .btn{white-space:nowrap;padding:12px 8px}
+.src{display:flex;justify-content:space-between;align-items:center;gap:8px}.flg{border:1px solid var(--bd);background:transparent;border-radius:999px;padding:2px 10px;font-size:12px}.flg.on{background:#fef3c7;color:#92400e;border-color:#f59e0b}
+.g.fl{box-shadow:inset 0 -4px 0 #f59e0b}.opt.hid{opacity:.3;text-decoration:line-through}.hint{width:100%;margin-top:6px}
+.lv{display:flex;align-items:center;gap:10px}.xb{flex:1;height:8px;border-radius:8px;background:var(--bd);overflow:hidden}.xb i{display:block;height:100%;background:linear-gradient(90deg,#f59e0b,#ef4444)}
+.sg{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;text-align:center;margin-top:12px}.sg div{display:flex;flex-direction:column;font-size:18px}.sg b{font-size:17px}.sg small{font-size:11px;color:var(--mut)}
+.rk{font-size:22px;font-weight:800;margin-bottom:2px}.warn{color:var(--no);animation:pulse 1s infinite}
+.ts{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);z-index:60;background:linear-gradient(135deg,#5b5bf0,#d946ef);color:#fff;padding:8px 16px;border-radius:20px;font-weight:700;box-shadow:0 8px 22px rgba(110,90,240,.45);animation:toast 1.7s both;pointer-events:none}
+
+/* Music Player Style */
+.music-card{margin-top:16px;background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:16px;box-shadow:var(--sh)}
+.music-title{font-weight:700;font-size:15px;margin-bottom:8px;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.music-controls{display:flex;align-items:center;gap:8px;margin-top:10px}
+.music-controls select{flex:1;padding:8px 12px;border-radius:12px;border:1.5px solid var(--bd);background:var(--card);color:var(--tx);font:inherit;outline:none}
+.upload-btn{display:inline-block;padding:8px 12px;background:var(--sel);border:1.5px dashed var(--pri);border-radius:12px;cursor:pointer;font-size:13px;font-weight:600;color:var(--pri);text-align:center}
+.upload-btn input{display:none}
+
+@keyframes toast{0%{opacity:0;transform:translate(-50%,12px)}15%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-12px)}}
+@keyframes pulse{50%{opacity:.45}}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}}
+@keyframes fade{from{opacity:0}}
+@keyframes bar{from{width:0}}
+@keyframes pop{40%{transform:scale(1.045);box-shadow:0 0 0 6px var(--okb)}}
+@keyframes shake{20%,60%{transform:translateX(-7px)}40%,80%{transform:translateX(7px)}}
+@keyframes float{to{transform:translate(70px,60px) scale(1.2)}}
+@media(prefers-reduced-motion:reduce){*,::before,::after{animation:none!important;transition:none!important}}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet"></head><body><button class="mt" id="mt" data-a="mute" aria-label="Bật/tắt âm thanh">🔊</button><div id="app"></div>
+<script>
+const D={"mcq": [{"bai": "Bài 4", "num": "1", "q": "Bối cảnh quốc tế nào sau đây dẫn đến quá trình hình thành của Hiệp hội các quốc gia Đông Nam Á (ASEAN)?", "opts": ["Các nước Đông Nam Á giành được độc lập, thống nhất.", "Sự ra đời của tổ chức NATO và các liên minh quân sự.", "Sự ra đời của Tổ chức Hiệp ước Vác-sa-va.", "Sự phát triển của xu thế khu vực hoá trên thế giới."], "ans": 3}, {"bai": "Bài 4", "num": "2", "q": "Tổ chức khu vực nào sau đây được thành lập ở Đông Nam Á năm 1963?", "opts": ["MAPHILINDO.", "NAFTA.", "APEC.", "EU."], "ans": 0}, {"bai": "Bài 4", "num": "3", "q": "Hiệp hội các quốc gia Đông Nam Á được thành lập năm 1967 tại", "opts": ["Ma-ni-la (Phi-líp-pin).", "Cua-la Lăm-pơ (Ma-lai-xi-a).", "Ba-li (In-đô-nê-xi-a).", "Băng Cốc (Thái Lan)."], "ans": 3}, {"bai": "Bài 4", "num": "4", "q": "Năm nước sáng lập ban đầu của tổ chức ASEAN là", "opts": ["Indônêxia, Malaixia, Campuchia, Thái Lan, Philippin.", "Indônêxia, Malaixia, Xīngapo, Thái Lan, Philippin.", "Việt Nam, Malaixia, Campuchia, Thái Lan, Philippin.", "Brunêy Malaixia, Campuchia, Thái Lan, Philippin."], "ans": 1}, {"bai": "Bài 4", "num": "5", "q": "Đối với tổ chức ASEAN, ngày 28/7/1995 diễn ra sự kiện gì?", "opts": ["Lào gia nhập ASEAN.", "Mianma gia nhập ASEAN.", "Việt Nam gia nhập ASEAN.", "Thái Lan gia nhập ASEAN."], "ans": 2}, {"bai": "Bài 4", "num": "6", "q": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) được thành lập tại quốc gia nào?", "opts": ["Trung Quốc.", "Thái Lan.", "Việt Nam.", "Xin-ga-po."], "ans": 1}, {"bai": "Bài 4", "num": "7", "q": "Từ năm 2015 đến nay, cộng đồng ASEAN được thành lập và xây dựng với ba trụ cột là", "opts": ["chính trị - an ninh, kinh tế, văn hóa - xã hội.", "chính trị - quân sự - kinh tế, văn hóa.", "kinh tế, văn hóa – xã hội – quân sự.", "chính trị - an ninh quốc phòng - xã hội."], "ans": 0}, {"bai": "Bài 4", "num": "8", "q": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) ra đời năm 1967 là do", "opts": ["Mỹ bắt đầu can thiệp vào cuộc chiến tranh xâm lược Đông Dương.", "sự phát triển mạnh mẽ của xu hướng toàn cầu hóa trên thế giới.", "muốn hạn chế ảnh hưởng của các cường quốc bên ngoài vào khu vực.", "được sự hỗ trợ, giúp đỡ về mọi mặt từ các nước xã hội chủ nghĩa."], "ans": 2}, {"bai": "Bài 4", "num": "9", "q": "Một trong những mục đích thành lập của ASEAN là", "opts": ["thúc đẩy tăng trưởng kinh tế, tiến bộ xã hội trong khu vực.", "tăng cường hợp tác quốc phòng, an ninh và hình thành liên minh phòng thủ.", "thành lập một tổ chức chính trị, quân sự chung trong khu vực Đông Nam Á.", "giải quyết tranh chấp trong khu vực bằng biện pháp quân sự hoà bình."], "ans": 0}, {"bai": "Bài 4", "num": "10", "q": "Một trong những thành tựu của ASEAN từ năm 1999 đến năm 2015 là", "opts": ["thành lập và xây dựng Cộng đồng kinh tế, chính trị ASEAN.", "đẩy mạnh hợp tác về an ninh, chính trị, xã hội bên ngoài ASEAN.", "xây dựng nền móng ban đầu cho sự hợp tác xã hội ASEAN.", "hoàn thiện cơ cấu tổ chức ASEAN, tăng cường hợp tác nội khối và ngoại khối."], "ans": 3}, {"bai": "Bài 4", "num": "11", "q": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) ra đời năm 1967 nhằm đáp ứng nhu cầu", "opts": ["tăng cường sức mạnh quân sự.", "tạo sự cân bằng sức mạnh với Mỹ.", "hợp tác để cùng phát triển.", "đoàn kết để giải phóng dân tộc."], "ans": 2}, {"bai": "Bài 4", "num": "12", "q": "Năm 2015, ASEAN đã ra tuyên bố thành lập", "opts": ["diễn đàn khu vực ASEAN (ARF).", "khu vực mậu dịch tự do ASEAN (AFTA).", "Cộng đồng kinh tế ASEAN.", "Cộng đồng ASEAN."], "ans": 3}, {"bai": "Bài 4", "num": "13", "q": "Mối quan hệ giữa Việt Nam và ASEAN được đẩy mạnh khi", "opts": ["Việt Nam kết thúc thắng lợi cuộc kháng chiến chống Mỹ cứu nước.", "Chiến tranh lạnh kết thúc và vấn đề Campuchia được giải quyết.", "Việt Nam mở rộng quan hệ ngoại giao với các nước trên thế giới.", "Việt Nam bắt đầu tiến hành công cuộc đổi mới đất nước."], "ans": 1}, {"bai": "Bài 4", "num": "14", "q": "Yếu tố khách quan thúc đẩy sự ra đời của tổ chức ASEAN là", "opts": ["nhu cầu phát triển kinh tế của các quốc gia ở khu vực Đông Nam Á.", "các nước Đông Nam Á mong muốn duy trì hòa bình và ổn định khu vực.", "các nước Đông Nam Á gặp khó khăn trong xây dựng và phát triển đất nước.", "những tổ chức hợp tác mang tính khu vực trên thế giới xuất hiện ngày càng nhiều."], "ans": 3}, {"bai": "Bài 4", "num": "15", "q": "Tháng 1/1984, nước nào sau đây gia nhập tổ chức ASEAN?", "opts": ["Việt Nam.", "Campuchia.", "Brunêy.", "Philippin."], "ans": 2}, {"bai": "Bài 4", "num": "16", "q": "Từ năm 1967 - 1976 là giai đoạn ASEAN", "opts": ["xây dựng nền móng ban đầu, tạo tiền đề cho sự hợp tác.", "xây dựng quan hệ chính trị ổn định.", "hoàn thiện cơ cấu tổ chức.", "thành lập và xây dựng Cộng đồng ASEAN."], "ans": 0}, {"bai": "Bài 4", "num": "17", "q": "Tuyên bố về sự Hòa hợp ASEAN còn được gọi là", "opts": ["Tuyên bố về Khu vực Hòa bình, Tự do và Trung lập (ZOPFAN, 1971).", "Tuyên bố thành lập Cộng đồng ASEAN (2015).", "Tuyên bố Ba-li I (1976).", "Tuyên bố Ba-li II (2003)."], "ans": 2}, {"bai": "Bài 4", "num": "18", "q": "Việt Nam trở thành thành viên thứ bảy của ASEAN (1995) là dấu mốc quan trọng trong sự phát triển của tổ chức này vì", "opts": ["mở ra quá trình liên kết của ASEAN với các thành viên ngoài khu vực.", "mở ra triển vọng cho sự liên kết trong toàn khu vực Đông Nam Á.", "đánh dấu ASEAN đã trở thành liên minh kinh tế, chính trị hùng mạnh.", "chứng tỏ sự hợp tác giữa các thành viên ASEAN ngày càng hiệu quả."], "ans": 1}, {"bai": "Bài 4", "num": "19", "q": "Nhận xét nào sau đây là đúng về tổ chức Hiệp hội các quốc gia Đông Nam Á (ASEAN)?", "opts": ["Mọi quyết định có giá trị như pháp luật của quốc gia.", "Có đóng góp cho nền hòa bình ở khu vực và thế giới.", "Là tổ chức khu vực được thành lập sớm nhất thế giới.", "Có sự đồng nhất giữa các quốc gia về chính trị, kinh tế."], "ans": 1}, {"bai": "Bài 4", "num": "20", "q": "Quá trình mở rộng từ ASEAN 5 đến ASEAN 10 có ý nghĩa gì?", "opts": ["đảm bảo an ninh, quốc phòng, nâng cao vị thế trên trường quốc tế.", "đảm bảo an ninh, chính trị khu vực, nâng cao vị thế trên trường quốc tế.", "đảm bảo lợi ích chung của các nước, tạo điều kiện hợp tác kinh tế.", "đảm bảo hòa bình, ổn định của cả khu vực, nâng cao vị thế trên trường quốc tế."], "ans": 3}, {"bai": "Bài 4", "num": "21", "q": "Tháng 8-1967, Hiệp hội các quốc gia Đông Nam Á (ASEAN) thành lập là biểu hiện rõ nét của xu thế nào?", "opts": ["Liên kết khu vực.", "Toàn cầu hóa.", "Đa cực nhiều trung tâm.", "Hòa hoãn Đông - Tây."], "ans": 0}, {"bai": "Bài 4", "num": "22", "q": "Một trong những quốc gia tham gia sáng lập tổ chức ASEAN (1967) là", "opts": ["Cam-pu-chia", "Việt Nam.", "Thái Lan.", "Bru-nây."], "ans": 2}, {"bai": "Bài 4", "num": "23", "q": "Một trong những mục đích thành lập của tổ chức ASEAN là", "opts": ["đưa Đông Nam Á trở thành số 1 thế giới.", "xây dựng khối tư bản chủ nghĩa phát triển.", "thúc đẩy hoà bình và ổn định của khu vực.", "thúc đẩy sự hợp tác toàn diện, thống nhất."], "ans": 2}, {"bai": "Bài 4", "num": "24", "q": "Văn kiện nào đã nêu rõ mục đích thành lập của tổ chức ASEAN?", "opts": ["Tuyên bố ASEAN.", "Hiệp định Giơ-ne-vơ.", "Hiệp định Pa-ri.", "Tuyên bố Lahay."], "ans": 0}, {"bai": "Bài 5", "num": "1", "q": "Ý tưởng xây dựng Cộng đồng ASEAN đã khởi nguồn từ", "opts": ["chiến tranh thế giới thứ hai bùng nổ.", "Tổ chức ASEAN được thành lập.", "Xu thế toàn cầu hoá xuất hiện.", "Hiệp ước hoà bình Campuchia ký kết."], "ans": 1}, {"bai": "Bài 5", "num": "2", "q": "Mục tiêu xây dựng một cộng đồng thịnh vượng và hoà bình ở Đông Nam Á được thông qua tại", "opts": ["Tuyên bố Băng Cốc (1967).", "Tầm nhìn ASEAN 2020.", "Tuyên bố Malina (1987).", "Tuyên bố Xīngapo (1992)."], "ans": 0}, {"bai": "Bài 5", "num": "3.1", "q": "Một trong ba trụ cột của Cộng đồng ASEAN là?", "opts": ["quốc phòng.", "văn hoá-xã hội.", "tài chính.", "pháp luật."], "ans": 1}, {"bai": "Bài 5", "num": "3.2", "q": "Một trong ba trụ cột của Cộng đồng ASEAN là", "opts": ["Quốc phòng.", "Chính trị-an ninh.", "Tài chính.", "Pháp luật."], "ans": 1}, {"bai": "Bài 5", "num": "3.3", "q": "Đâu không phải là một trong những trụ cột của Cộng đồng ASEAN?", "opts": ["Cộng đồng Chính trị - An ninh.", "Cộng đồng Kinh tế.", "Cộng đồng An ninh - Quốc phòng.", "Cộng đồng Văn hóa - Xã hội."], "ans": 2}, {"bai": "Bài 5", "num": "4", "q": "Nội dung nào sau đây không phải là nguyên tắc hoạt động của ASEAN?", "opts": ["Bình đẳng chủ quyền giữa các quốc gia, các dân tộc.", "Tôn trọng chủ quyền và toàn vẹn lãnh thổ các nước.", "Không can thiệp vào công việc nội bộ của nhau.", "Giải quyết các tranh chấp bằng biện pháp hòa bình."], "ans": 0}, {"bai": "Bài 5", "num": "5", "q": "Tuyên bố thành lập Cộng đồng ASEAN (năm 2015) tại quốc gia nào sau đây?", "opts": ["Xīngapo.", "Ma-lai-xi-a.", "Phi-líp-pin.", "In-đô-nê-xi-a."], "ans": 1}, {"bai": "Bài 5", "num": "6", "q": "Mục tiêu xây dựng một Cộng đồng ASEAN dựa trên cơ sở nào sau đây?", "opts": ["Nguyên tắc hoạt động của ASEAN.", "Sự đồng thuận cao của các nước.", "Hiến chương ASEAN.", "Cơ cấu hoạt động của ASEAN."], "ans": 2}, {"bai": "Bài 5", "num": "7", "q": "Mục tiêu xây dựng một Cộng đồng ASEAN dựa trên cơ sở Hiến chương ASEAN. Hiến chương ASEAN có tính chất nào sau đây?", "opts": ["Đối ngoại.", "Khoa học.", "Hợp tác.", "Pháp lý."], "ans": 3}, {"bai": "Bài 5", "num": "8", "q": "Cộng đồng ASEAN được thành lập gồm 3 trụ cột hợp tác nào sau đây?", "opts": ["Chính trị - an ninh, kinh tế, văn hoá - xã hội.", "Đối ngoại, chính trị - an ninh, môi trường.", "Tài chính, chính trị - an ninh, văn hoá - xã hội.", "Văn hoá - xã hội, pháp luật, đối ngoại chung."], "ans": 0}, {"bai": "Bài 5", "num": "9", "q": "Kế hoạch xây dựng Cộng đồng ASEAN dựa trên cơ sở nào sau đây?", "opts": ["Nguyên tắc hoạt động tổ chức ASEAN.", "Mục tiêu xây dựng Cộng đồng ASEAN.", "Cơ sở pháp lý là Hiến chương ASEAN.", "Hiệp định Bali đánh dấu sự phát triển."], "ans": 1}, {"bai": "Bài 5", "num": "10", "q": "“Nhằm đưa ASEAN trở thành cộng đồng gắn kết hơn về kinh tế, chính trị - an ninh có trách nhiệm về xã hội đối với người dân”. Nội dung trên được thể hiện tại văn kiện nào sau đây?", "opts": ["Hội nghị cấp cao ASEAN lần thứ 14 ở Thái Lan 2009.", "Hội nghị cấp cao không chính thức tại Malaixia 1997.", "Tuyên bố tại Băng Cốc 1967, thành lập tổ chức ASEAN.", "Hội nghị hoá bình Campuchia, mở ra chương mới ASEAN."], "ans": 0}, {"bai": "Bài 5", "num": "11", "q": "Hội nghị cấp cao ASEAN lần thứ 14 ở Thái Lan 2009 đã đưa ra kế hoạch nào sau đây?", "opts": ["Lộ trình xây dựng Cộng đồng ASEAN 2009 - 2015.", "Tầm nhìn ASEAN trong giai đoạn 2015 trở đi.", "Quy định những hiến chương trong cộng đồng ASEAN.", "Lộ trình xây dựng Cộng đồng ASEAN 2009 - 2025."], "ans": 0}, {"bai": "Bài 5", "num": "12", "q": "Tuyên bố tại Cu-la-lăm-pua ngày 31 - 12 - 2015 đã", "opts": ["thông qua Hiến chương ASEAN.", "chính thức thành lập Cộng đồng ASEAN.", "quy định nguyên tắc hoạt động ASEAN.", "Mở rộng mục tiêu ASEAN về đối ngoại."], "ans": 1}, {"bai": "Bài 5", "num": "13", "q": "Nội dung nào sau đây thuộc Cộng đồng chính trị - an ninh ASEAN?", "opts": ["Tạo ra một thị trường cơ sở sản xuất chung.", "Tạo dựng một khu vực gắn kết hoà bình, tự cường.", "Xây dựng khu vực kinh tế có sức cạnh tranh cao.", "Phát triển đồng đều hội nhập đầy đủ kinh tế toàn cầu."], "ans": 1}, {"bai": "Bài 5", "num": "14", "q": "Cơ sở nào sau đây dẫn đến thành lập Cộng đồng ASEAN (2015)?", "opts": ["Hoàn thành cơ bản việc triển khai các kế hoạch xây dựng cộng đồng.", "Mục đích của tổ chức ASEAN đã được xây dựng hoàn thiện, đồng bộ.", "Hiệp ước Bali kí kết (1976) tại Indônêxia đánh dấu bước phát triển mới.", "Hiệp định hoà bình cho Campuchia (1991) mở ra chương mới ASEAN."], "ans": 0}, {"bai": "Bài 5", "num": "15", "q": "Ý nào sau đây không phải là nội dung chính của Cộng đồng Kinh tế ASEAN?", "opts": ["Tạo ra thị trường và cơ sở sản xuất chung, đầu tư vốn và lao động có tay nghề.", "Xây dựng kinh tế khu vực có sức cạnh tranh cao, năng động với các nước khác.", "Phát triển đồng đều, hội nhập đầy đủ vào nền kinh tế toàn cầu trong xu thế mới.", "Phát triển con người, bảo hiểm và những phúc lợi xã hội cho nhân dân lao động."], "ans": 3}, {"bai": "Bài 5", "num": "16", "q": "Nội dung nào sau đây là mục tiêu hướng tới của các nước Đông Nam Á khi xây dựng Cộng đồng Văn hóa - Xã hội ASEAN?", "opts": ["xây dựng một ASEAN giàu có, không có vũ khí hạt nhân.", "đưa ASEAN trở thành tổ chức liên kết lớn nhất thế giới.", "thu hẹp khoảng cách giữa các nước ASEAN về dân trí.", "xây dựng tình đoàn kết, hữu nghị giữa các nước ASEAN."], "ans": 3}, {"bai": "Bài 5", "num": "17", "q": "Nội dung nào sau đây là thách thức Việt Nam phải ứng phó khi tham gia vào Cộng đồng ASEAN?", "opts": ["Mâu thuẫn tôn giáo, sắc tộc, lãnh thổ có thể bùng nổ.", "Nguy cơ đương đầu với Trung Quốc trên Biển Đông.", "Sự cạnh tranh quyết liệt của các nước trong khu vực.", "Tình trạng tham nhũng, lãng phí, quan liêu tăng lên."], "ans": 2}, {"bai": "Bài 5", "num": "18", "q": "Xây dựng tầm nhìn cộng đồng ASEAN (sau năm 2025) được thông qua tại", "opts": ["Hội nghị cấp cao ASEAN lần thứ 37 tại Hà Nội (2020).", "Hội nghị cấp cao ASEAN lần thứ 14 ở Thái Lan 2009.", "Hội nghị cấp cao không chính thức tại Malaixia 1997.", "Tuyên bố tại Băng Cốc 1967, thành lập tổ chức ASEAN."], "ans": 0}, {"bai": "Bài 5", "num": "19", "q": "Sau khi thành lập Cộng đồng ASEAN, các nước ASEAN tiếp tục đưa ra định hướng phát triển mới sau năm 2015 với nội dung nào sau đây?", "opts": ["Củng cố nền hoà bình ổn định an ninh của khu vực.", "Tiếp tục củng cố sâu sắc hơn trong lĩnh vực kinh tế.", "Giải quyết triệt để vấn đề Campuchia với Đông Dương.", "Không được đe doạ vũ lực và sử dụng vũ lực với nhau."], "ans": 1}, {"bai": "Bài 5", "num": "20", "q": "Một trong những thách thức về kinh tế mà Cộng đồng ASEAN phải đối mặt trong quá trình xây dựng và phát triển là", "opts": ["sự đa dạng về chế độ chính trị.", "những vấn đề lịch sử sâu xa.", "chênh lệch trình độ phát triển.", "sự xung đột lãnh thổ, biên giới."], "ans": 2}], "tf": [{"bai": "Bài 4", "num": "1", "stem": ["Đọc tư liệu sau đây:", "1. Thúc đẩy sự tăng trưởng kinh tế, tiến bộ xã hội và phát triển văn hóa trong khu vực thông qua các nỗ lực chung trên tinh thần bình đẳng và hợp tác nhằm tăng cường cơ sở cho một Cộng đồng các quốc gia Đông Nam Á hòa bình và thịnh vượng.", "2. Thúc đẩy hòa bình và ổn định khu vực bằng việc tôn trọng công lí và nguyên tắc luật pháp trong quan hệ giữa các quốc gia trong vùng và tuân thủ các nguyên tắc của Hiến chương Liên hợp quốc.", "3. Thúc đẩy sự cộng tác tích cực và giúp đỡ lẫn nhau trong các vấn đề cùng quan tâm trong các lĩnh vực kinh tế, xã hội, văn hóa, khoa học - kỹ thuật và hành chính. ...", "(Trích Tuyên bố ASEAN - SGK Lịch sử 12 - KNTT - Trang 22 - NXB GD năm 2026)"], "items": [{"t": "Tuyên bố ASEAN nêu rõ mục đích thành lập ASEAN.", "a": true}, {"t": "Tuyên bố ASEAN khẳng định nguyên tắc hoạt động của ASEAN.", "a": false}, {"t": "Tuyên bố ASEAN tạo điều kiện cho các nước thành viên phát triển và hội nhập khu vực, thế giới.", "a": true}, {"t": "Tuyên bố ASEAN chính thức thành lập Cộng đồng ASEAN.", "a": false}]}, {"bai": "Bài 4", "num": "2", "stem": ["Tuyên bố ASEAN nêu rõ mục đích thành lập của ASEAN:", "- Thúc đẩy sự tăng trưởng kinh tế, tiến bộ xã hội và phát triển văn hoá trong khu vực thông qua các nỗ lực chung trên tinh thần bình đẳng và hợp tác nhằm tăng cường cơ sở cho một Cộng đồng các quốc gia Đông Nam Á hoá bình và thịnh vượng.", "- Thúc đẩy hoà bình và ổn định khu vực bằng việc tôn trọng công lí và nguyên tắc luật pháp trong quan hệ giữa các quốc gia trong vùng và tuân thủ các nguyên tắc của Hiến chương Liên hợp quốc.", "- Thúc đẩy sự cộng tác tích cực và giúp đỡ lẫn nhau trong các vấn đề cùng quan tâm trong các lĩnh vực kinh tế, xã hội, văn hoá, khoa học - kỹ thuật và hành chính,....", "(Theo Tuyên bố ASEAN, Hiệp hội các nước Đông Nam Á (ASEAN), NXB Chính trị quốc gia, 1998, trang 15, 16)"], "items": [{"t": "Tuyên bố về Khu vực Hoà bình, Tự do và Trung lập (ZOPFAN) được ra vào năm 1971, nhằm khẳng định sự độc lập và chủ quyền của các nước Đông Nam Á trước các cường quốc ngoài khu vực.", "a": true}, {"t": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) khi mới thành lập (1967) không đề ra mục đích, nhiệm vụ xây dựng một cộng đồng Đông Nam Á hòa bình và thịnh vượng.", "a": false}, {"t": "Hội nghị Thượng đỉnh gồm Thủ tướng các quốc gia thành viên; là cơ quan hoạch định chính sách tối cao của ASEAN.", "a": false}, {"t": "Mối quan hệ giữa Việt Nam và ASEAN là một trong những trụ cột quan trọng của chính sách đối ngoại của Việt Nam, mang lại nhiều lợi ích cho cả hai bên và đóng góp vào hòa bình và phát triển trong khu vực Đông Nam Á.", "a": true}]}, {"bai": "Bài 4", "num": "3", "stem": ["Cho đoạn tư liệu sau đây:", "\"1. Thúc đẩy sự tăng trưởng kinh tế, tiến bộ xã hội và phát triển văn hoá trong khu vực thông qua các nỗ lực chung trên tinh thần bình đẳng và hợp tác nhằm tăng cường cơ sở cho một Cộng đồng các quốc gia Đông Nam Á hoà bình và thịnh vượng. 2. Thúc đẩy hoá bình và ổn định khu vực bằng việc tôn trọng công lí và nguyên tắc luật pháp trong quan hệ giữa các quốc gia trong vùng và tuân thủ các nguyên tắc của Hiến chương Liên hợp quốc. 3. Thúc đẩy sự cộng tác tích cực và giúp đỡ lẫn nhau trong các vấn đề cùng quan tâm trong các lĩnh vực kinh tế, xã hội, văn hoá, khoa học - kỹ thuật và hành chính,....\"", "(Theo Tuyên bố ASEAN, Hiệp hội các nước Đông Nam Á (ASEAN), NXB Chính trị quốc gia, 1998, tr. 15 - 16)"], "items": [{"t": "ASEAN đã thúc đẩy hợp tác kinh tế, văn hoá, xã hội giữa các nước thành viên.", "a": true}, {"t": "Hiệp hội các quốc gia Đông Nam Á (ASEAN) thành lập tại Băng Cốc (Thái Lan).", "a": true}, {"t": "ASEAN đã đạt được sự đồng thuận trong giải quyết vấn đề tranh chấp ở Biển Đông.", "a": false}, {"t": "Sự ra đời của tổ chức ASEAN là biểu hiện của xu thế hoá hoãn Đông – Tây.", "a": false}]}, {"bai": "Bài 4", "num": "4", "stem": ["Cho đoạn tư liệu sau đây:", "“Hiệp ước thân thiện và hợp tác ở Đông Nam Á (thường được gọi là Hiệp ước Bali) đặt khuôn khổ cho một nền hòa bình lâu dài ở khu vực trên cơ sở tôn trọng độc lập, chủ quyền của nhau, không can thiệp vào công việc nội bộ của nhau, giải quyết các tranh chấp trong khu vực và kêu gọi hợp tác có hiệu quả trên các lĩnh vực công – nông nghiệp, thương mại và cải thiện cơ sở hạ tầng kinh tế vì lợi ích chung của các nước trong khu vực\".", "(Nguyễn Anh Thái, Lịch sử thế giới hiện đại, NXB Giáo dục, Hà Nội, 2002, tr.359)"], "items": [{"t": "Hiệp ước Bali là hiệp ước được kí kết giữa các nước ở khu vực Đông Nam Á.", "a": false}, {"t": "Hiệp ước Bali được kí kết đánh dấu bước ngoặt trong quá trình phát triển của ASEAN.", "a": true}, {"t": "Từ sau khi Hiệp ước Bali được kí kết, ở khu vực Đông Nam Á đã thiết lập quan hệ chính trị ổn định, mở rộng thành viên và từng bước nâng cao vị thế của ASEAN trên trường quốc tế.", "a": true}, {"t": "Hiệp ước Bali xác định nguyên tắc quan trọng duy nhất trong quan hệ giữa các nước ở khu vực Đông Nam Á là phải tôn trọng các quyền dân tộc cơ bản của nhau.", "a": false}]}, {"bai": "Bài 5", "num": "1", "stem": ["Đọc đoạn tư liệu sau đây:", "“Ý tưởng xây dựng cộng đồng ASEAN đã khởi nguồn từ khi ASEAN thành lập. Tuyên bố Băng Cốc (1967) đã nêu ra mục tiêu xây dựng một cộng đồng thịnh vượng và hoà bình ở Đông Nam Á.”", "(Trích SGKLS lớp 12 trang 25 - Bộ KNTN, NXB GDVN năm 2026)"], "items": [{"t": "Cộng đồng ASEAN được các nước lên ý tưởng xây dựng từ trước thập niên 50 của thế kỉ XX.", "a": false}, {"t": "Tuyên bố tại Băng Cốc (1967) là mục tiêu đầu tiên của Cộng đồng ASEAN.", "a": true}, {"t": "Tuyên bố Băng Cốc (1967) đã nêu ra mục tiêu xây dựng một cộng đồng thịnh vượng và hoà bình ở châu Á.", "a": false}, {"t": "Cộng đồng ASEAN ra đời có tác dụng thúc đẩy sự phát triển khu vực Đông Nam Á.", "a": true}]}, {"bai": "Bài 5", "num": "2", "stem": ["Đọc đoạn tư liệu sau đây:", "“Mục tiêu xây dựng cộng đồng ASEAN là đưa ASEAN trở thành một cộng đồng với 3 trụ cột có mức độ liên kết sâu rộng hơn, ràng buộc hơn trên cơ sở pháp lý là Hiến chương ASEAN, đồng thời mở rộng hợp tác với bên ngoài. Cộng đồng ASEAN sẽ được thành lập thành 3 trụ cột là: Hợp tác chính trị và an ninh, hợp tác kinh tế, hợp tác văn hoá - xã hội . Ba trụ cột được gắn kết chặt chẽ và cùng tăng cường cho mục đích đảm bảo hoà bình, ổn định lâu dài và cùng thịnh vượng trong khu vực. ”", "(Trích SGKLS lớp 12 trang 26 - Bộ KNTN, NXB GDVN năm 2026)"], "items": [{"t": "Cơ sở để xây dựng cộng đồng ASEAN là Hiến chương ASEAN.", "a": true}, {"t": "Cộng đồng ASEAN được thành lập với 4 trụ cột chính.", "a": false}, {"t": "Hợp tác chính trị và an ninh, hợp tác kinh tế, hợp tác văn hoá - xã hội là những trụ cột chính của cộng đồng ASEAN.", "a": true}, {"t": "Trụ cột của ASEAN tồn tại độc lập tách rời nhau.", "a": false}]}, {"bai": "Bài 5", "num": "3", "stem": ["Đọc đoạn tư liệu sau đây:", "“Cộng đồng chính trị an ninh ASEAN đã được xây dựng trên nền tảng những thành quả hợp tác chính trị an ninh đã đạt được nhằm mục tiêu tạo dựng môi trường hoà bình và an ninh khu vực, nâng hợp tác chính trị, an ninh lên một nấc thang mới cao hơn và chặt chẽ hơn trên cơ sở các nguyên tắc cơ bản của ASEAN.”", "(Trích SGKLS lớp 12 trang 27 - Bộ KNTN, NXB GDVN năm 2026)"], "items": [{"t": "Cộng đồng chính trị an ninh ASEAN đã được xây dựng trên nền tảng những thành quả hợp tác chính trị, đối ngoại chung.", "a": false}, {"t": "Mục tiêu chính trị của cộng đồng ASEAN là nhằm tạo dựng môi trường hoà bình và an ninh khu vực, nâng hợp tác chính trị.", "a": true}, {"t": "Mục tiêu chính trị của cộng đồng ASEAN dựa trên nguyên tắc chung sống hoà bình và sự nhất trí của các nước lớn.", "a": false}, {"t": "Cộng đồng chính trị an ninh ASEAN tạo điều kiện thúc đẩy các cộng đồng kinh tế, văn hoá xã hội trong tổ chức phát triển.", "a": true}]}, {"bai": "Bài 5", "num": "4", "stem": ["Đọc đoạn tư liệu sau đây:", "“Bên cạnh đó, những thách thức từ bên ngoài cũng tác động đến Cộng đồng ASEAN như: cạnh tranh ảnh hưởng của các nước lớn đối với khu vực, diễn biến phức tạp của tình hình Biển Đông và tình hình quốc tế, biến đổi khí hậu, ô nhiễm môi trường, dịch bệnh.... Để vượt qua những thách thức, các nước ASEAN đã và đang đẩy nhanh quá trình triển khai các kế hoạch đã đề ra vì lợi ích chung, lâu dài của cả cộng đồng.”", "(Sách giáo khoa Lịch sử 12, bộ Kết nối tri thức với cuộc sống, trang 30.)"], "items": [{"t": "Tư liệu trên nói về những thách thức mà ASEAN đang phải đối diện hiện nay.", "a": true}, {"t": "Để vượt qua thách thức, ASEAN không được liên kết với các nước ngoài khu vực.", "a": false}, {"t": "Ô nhiễm môi trường và dịch bệnh là hai thách thức lớn nhất mà ASEAN đối mặt.", "a": false}, {"t": "Để vượt qua thách thức, các thành viên ASEAN cần hợp tác và đoàn kết.", "a": true}]}, {"bai": "Bài 5", "num": "5", "stem": ["Đọc đoạn tư liệu sau đây:", "“Hội nghị Cấp cao ASEAN lần thứ 37 tại Hà Nội (2020) đã nhất trí thông qua việc xây dựng Tầm nhìn Cộng đồng ASEAN sau năm 2025, hướng tới việc gắn kết chặt chẽ các nội dung hợp tác trên cả ba trụ cột (Cộng đồng Chính trị - An ninh, Cộng đồng Kinh tế và Cộng đồng Văn hóa - xã hội), đồng thời bổ sung những nội dung mới như: hợp tác về chuyển đổi số, phát triển nền kinh tế số, kinh tế xanh...”.", "(Sách giáo khoa Lịch sử 12. bộ Kết nối tri thức với cuộc sống, trang 29.)"], "items": [{"t": "Đến năm 2015, Cộng đồng ASEAN đã được thành lập với hợp tác ở ba trụ cột.", "a": true}, {"t": "Cộng đồng ASEAN là tổ chức thay thế cho Hiệp hội các quốc gia Đông Nam Á.", "a": false}, {"t": "Hợp tác Chính trị - an ninh là nội dung quan trọng nhất của Cộng đồng ASEAN", "a": false}, {"t": "Cộng đồng ASEAN đang xây dựng quá trình nhất thể hòa về chính trị, kinh tế.", "a": false}]}]};
+const $=s=>document.querySelector(s),app=$('#app');
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const shuf=a=>{a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
+const cfg={mode:'practice',bai:['Bài 4','Bài 5'],type:['mc','tf'],count:0,sq:true,so:false,wo:false,auto:true,min:0};
+let S=null,timer=null;
+let AC=null,mute=false;try{mute=localStorage.getItem('mute')=='1'}catch(e){}
+const LS={get(k,d){try{const v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+let W=LS.get('wrong',[]),ST=Object.assign({xp:0,done:0,right:0,best:0,streak:0,last:''},LS.get('st',{}));
+const lv=x=>Math.floor(Math.sqrt(x/60))+1;
+
+/* ĐƯỜNG DẪN CHUẨN TƯƠNG ĐỐI DÀNH CHO GITHUB PAGES */
+const playlist = [
+  { name: "🎵 Tìm Em", src: "./timem.mp3" },
+  { name: "🎵 Giải Cứu Thế Giới", src: "./giaicuu.mp3" }
+];
+
+function initMusicPlayer() {
+  const audio = $('#bg-music');
+  const select = $('#music-select');
+  const fileInput = $('#music-file-input');
+
+  if (!audio || !select) return;
+
+  select.innerHTML = playlist.map((item, index) => `<option value="${index}">${item.name}</option>`).join('');
+  
+  const loadAndPlayTrack = (index) => {
+    audio.src = playlist[index].src;
+    audio.load();
+    audio.play().catch(() => {});
+  };
+
+  loadAndPlayTrack(0);
+
+  const playOnUserInteraction = () => {
+    audio.play().then(() => {
+      document.removeEventListener('click', playOnUserInteraction);
+      document.removeEventListener('keydown', playOnUserInteraction);
+    }).catch(() => {});
+  };
+  document.addEventListener('click', playOnUserInteraction);
+  document.addEventListener('keydown', playOnUserInteraction);
+
+  select.addEventListener('change', (e) => {
+    loadAndPlayTrack(e.target.value);
+  });
+
+  audio.addEventListener('ended', () => {
+    let nextIdx = (parseInt(select.value) + 1) % playlist.length;
+    select.value = nextIdx;
+    loadAndPlayTrack(nextIdx);
+  });
+
+  if (fileInput) {
+    fileInput.addEventListener('change', (e) => {
+      const files = e.target.files;
+      if (files.length > 0) {
+        for (let i = 0; i < files.length; i++) {
+          const fileURL = URL.createObjectURL(files[i]);
+          playlist.push({ name: "🎧 " + files[i].name, src: fileURL });
+        }
+        select.innerHTML = playlist.map((item, index) => `<option value="${index}">${item.name}</option>`).join('');
+        select.value = playlist.length - files.length;
+        loadAndPlayTrack(select.value);
+        toast("✨ Đã thêm nhạc thành công!");
+      }
+    });
+  }
+}
+
+function tone(f,d,ty,v,w,f2){const o=AC.createOscillator(),g=AC.createGain(),s=AC.currentTime+(w||0);o.type=ty;o.frequency.setValueAtTime(f,s);if(f2)o.frequency.exponentialRampToValueAtTime(f2,s+d);g.gain.setValueAtTime(0,s);g.gain.linearRampToValueAtTime(v,s+.01);g.gain.exponentialRampToValueAtTime(.001,s+d);o.connect(g);g.connect(AC.destination);o.start(s);o.stop(s+d+.05)}
+function sfx(k,n){if(mute)return;try{AC=AC||new(window.AudioContext||window.webkitAudioContext)();if(AC.state=='suspended')AC.resume();
+ if(k=='tick')tone(680,.06,'triangle',.05);
+ else if(k=='swoosh')tone(300,.16,'sine',.05,0,900);
+ else if(k=='flag'){tone(900,.08,'square',.04);tone(1300,.1,'square',.03,.06)}
+ else if(k=='ok'){const f=784*Math.pow(2,Math.min(n||0,12)/24);tone(f,.2,'sine',.16);tone(f*1.5,.32,'sine',.14,.09)}
+ else if(k=='no'){tone(190,.3,'sawtooth',.08);tone(140,.32,'sawtooth',.07,.1);navigator.vibrate&&navigator.vibrate(60)}
+ else if(k=='combo')[784,988,1175,1568,1976].forEach((f,i)=>tone(f,.25,'triangle',.1,i*.06));
+ else if(k=='lvl')[523,659,784,1047,784,1047,1319].forEach((f,i)=>tone(f,.3,'triangle',.13,i*.09));
+ else if(k=='warn')tone(1000,.08,'square',.04);
+ else if(k=='win')[523,659,784,1047,1319].forEach((f,i)=>tone(f,.4,'triangle',.14,i*.11));
+ else if(k=='end')[392,330,262].forEach((f,i)=>tone(f,.3,'sine',.12,i*.14))}catch(e){}}
+function toast(m){const d=document.createElement('div');d.className='ts';d.textContent=m;document.body.appendChild(d);setTimeout(()=>d.remove(),1700)}
+function gain(n){const o=lv(ST.xp);ST.xp+=n;toast('+'+n+' XP');if(lv(ST.xp)>o)setTimeout(()=>{sfx('lvl');toast('🎉 Lên cấp '+lv(ST.xp)+'!')},700)}
+function rec(it,test){if(!done(it))return;const ok=okAll(it),w=new Set(W);ok?w.delete(it.id):w.add(it.id);W=[...w];LS.set('wrong',W);ST.done++;if(ok){ST.right++;if(test)ST.xp+=5;else gain(10+Math.min(S.streak,5))}LS.set('st',ST)}
+function touchDay(){const t=new Date().toLocaleDateString('sv'),y=new Date(Date.now()-864e5).toLocaleDateString('sv');if(ST.last!=t){ST.streak=ST.last==y?ST.streak+1:1;ST.last=t;LS.set('st',ST)}}
+function statsHTML(){const L=lv(ST.xp),a=(L-1)**2*60,b=L*L*60,p=Math.round((ST.xp-a)/(b-a)*100),t=new Date().toLocaleDateString('sv'),y=new Date(Date.now()-864e5).toLocaleDateString('sv'),ds=ST.last==t||ST.last==y?ST.streak:0;
+return `<div class="card"><div class="lv"><b>Lv ${L}</b><div class="xb"><i style="width:${p}%"></i></div><span class="mut">${ST.xp} XP</span></div><div class="sg"><div>🔥<b>${ds}</b><small>ngày liên tiếp</small></div><div>🎯<b>${ST.done?Math.round(ST.right/ST.done*100):0}%</b><small>chính xác</small></div><div>🏆<b>${ST.best.toFixed(1)}</b><small>điểm cao nhất</small></div><div>🔁<b>${W.length}</b><small>câu cần ôn</small></div></div></div>`}
+function fb(ok){if(practice()){S.streak=ok?S.streak+1:0;sfx(ok?'ok':'no',S.streak);if(ok&&S.streak%5==0)setTimeout(()=>{sfx('combo');toast('🔥 Combo x'+S.streak+'!')},350)}else sfx('tick')}
+function auto(it){if(!(practice()&&cfg.auto&&done(it)&&okAll(it)&&S.idx<S.items.length-1))return;const s=S,i=S.idx;setTimeout(()=>{if(S===s&&S.idx===i&&!S.fin){S.idx++;S.anim=true;sfx('swoosh');show();scrollTo(0,0)}},1100)}
+function confetti(){const c=document.createElement('canvas');c.style.cssText='position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50';document.body.appendChild(c);const x=c.getContext('2d');c.width=innerWidth;c.height=innerHeight;const P=[...Array(130)].map(()=>({x:Math.random()*c.width,y:-20-Math.random()*c.height*.5,r:4+Math.random()*5,vx:(Math.random()-.5)*3,vy:2+Math.random()*4,a:Math.random()*6,h:Math.random()*360}));let n=0;(function f(){x.clearRect(0,0,c.width,c.height);P.forEach(p=>{p.x+=p.vx;p.y+=p.vy;p.a+=.1;x.fillStyle='hsl('+p.h+',85%,60%)';x.save();x.translate(p.x,p.y);x.rotate(p.a);x.fillRect(-p.r,-p.r/2,p.r*2,p.r);x.restore()});if(++n<260)requestAnimationFrame(f);else c.remove()})()}
+
+const pool=()=>[...D.mcq.map((q,i)=>({k:'mc',o:i,q})),...D.tf.map((q,i)=>({k:'tf',o:1e3+i,q}))].map(x=>({...x,id:x.q.bai+'|'+x.k+'|'+x.q.num})).filter(x=>cfg.bai.includes(x.q.bai)&&cfg.type.includes(x.k)&&(!cfg.wo||W.includes(x.id)));
+const fmt=s=>String(s/60|0).padStart(2,'0')+':'+String(s%60).padStart(2,'0');
+const tog=(arr,v)=>{const i=arr.indexOf(v);i>=0?arr.splice(i,1):arr.push(v)};
+
+function home(){
+  clearInterval(timer);S=null;
+  const n=pool().length;
+  app.innerHTML=`<h1><span class="grad">Ôn thi Lịch sử 12</span><br>ASEAN 🌏</h1>
+  <div class="mut">${D.mcq.length} câu trắc nghiệm · ${D.tf.length} câu đúng/sai · Bài 4 &amp; Bài 5</div>${statsHTML()}
+  
+  <div class="music-card">
+    <div class="music-title">
+      <span>🎵 Nhạc Nền Web</span>
+      <label class="upload-btn">➕ Tải nhạc lên<input type="file" id="music-file-input" accept="audio/*" multiple></label>
+    </div>
+    <audio id="bg-music" controls style="width:100%; height:36px; margin-top:4px;"></audio>
+    <div class="music-controls">
+      <select id="music-select"></select>
+    </div>
+  </div>
+
+  <h2>Chế độ</h2><div class="row">
+   <button class="mode ${cfg.mode=='practice'?'on':''}" data-a="mode" data-v="practice">📖 Luyện tập<small>Làm câu nào biết đáp án câu đó ngay</small></button>
+   <button class="mode ${cfg.mode=='test'?'on':''}" data-a="mode" data-v="test">📝 Kiểm tra<small>Làm hết mới xem đáp án &amp; điểm</small></button></div>
+  <h2>Nội dung</h2><div class="row">
+   ${['Bài 4','Bài 5'].map(b=>`<button class="chip ${cfg.bai.includes(b)?'on':''}" data-a="bai" data-v="${b}">${b}</button>`).join('')}
+   <button class="chip ${cfg.type.includes('mc')?'on':''}" data-a="type" data-v="mc">Trắc nghiệm</button>
+   <button class="chip ${cfg.type.includes('tf')?'on':''}" data-a="type" data-v="tf">Đúng / Sai</button>
+   <button class="chip ${cfg.wo?'on':''}" data-a="wo">🔁 Chỉ câu đã sai (${W.length})</button></div>
+  <h2>Tuỳ chọn</h2><div class="card">
+   <label class="tg">Random số câu: <input type="number" id="cnt" min="0" max="${n}" value="${cfg.count||''}" placeholder="Tất cả"> <span class="mut" id="av">/ ${n} câu</span></label>
+   <label class="tg"><input type="checkbox" data-a="sq" ${cfg.sq?'checked':''}> Xáo trộn thứ tự câu hỏi</label>
+   <label class="tg"><input type="checkbox" data-a="so" ${cfg.so?'checked':''}> Xáo trộn thứ tự đáp án</label>
+   ${cfg.mode=='practice'?`<label class="tg"><input type="checkbox" data-a="auto" ${cfg.auto?'checked':''}> Tự chuyển câu khi trả lời đúng</label>`:`<label class="tg">⏳ Đếm ngược: <input type="number" id="min" min="0" max="180" value="${cfg.min||''}" placeholder="0"> <span class="mut">phút (0 = không giới hạn)</span></label>`}</div>
+  <button class="btn big" data-a="start" ${n?'':'disabled'}>${n?'Bắt đầu':'Chưa chọn nội dung'}</button>`;
+  app.className='an';const c=$('#cnt');c.oninput=()=>{cfg.count=Math.max(0,+c.value||0)};const mi=$('#min');if(mi)mi.oninput=()=>{cfg.min=Math.max(0,+mi.value||0)};
+
+  initMusicPlayer();
+}
+
+function start(){
+  let p=pool();const n=cfg.count>0?Math.min(cfg.count,p.length):p.length;
+  if(n<p.length)p=shuf(p).slice(0,n);
+  p=cfg.sq?shuf(p):p.sort((a,b)=>a.o-b.o);
+  const so=a=>cfg.so?shuf(a):a;
+  const items=p.map(x=>{const q=x.q,src=q.bai+' · Câu '+q.num;
+    return x.k=='mc'?{k:'mc',id:x.id,src,q:q.q,opts:so(q.opts.map((t,i)=>({t,ok:i===q.ans}))),a:null}
+    :{k:'tf',id:x.id,src,stem:q.stem,st:so(q.items),a:q.items.map(()=>null)}});
+  begin(items);
+}
+const el=()=>(Date.now()-S.t0)/1000|0,timeTxt=()=>S.limit?'⏳ '+fmt(Math.max(0,S.limit-el())):'⏱ '+fmt(el());
+function begin(items){S={items,idx:0,t0:Date.now(),fin:false,scr:'q',dur:0,anim:true,streak:0,hints:3,limit:cfg.mode=='test'&&cfg.min?cfg.min*60:0};touchDay();clearInterval(timer);timer=setInterval(tick,1000);show()}
+function tick(){if(!S||S.fin)return;const t=$('#tm'),r=S.limit-el();if(S.limit&&r<=0){toast('⏰ Hết giờ!');return finish(true)}if(t){t.textContent=timeTxt();if(S.limit&&r<=60){t.classList.add('warn');if(r<=10)sfx('warn')}}}
+
+const practice=()=>cfg.mode=='practice';
+const rvMC=it=>S.fin||(practice()&&it.a!==null);
+const rvTF=(it,j)=>S.fin||(practice()&&it.a[j]!==null);
+const done=it=>it.k=='mc'?it.a!==null:it.a.every(v=>v!==null);
+const okAll=it=>it.k=='mc'?it.a!==null&&it.opts[it.a].ok:it.st.every((s,j)=>it.a[j]===s.a);
+const tfOk=it=>it.st.filter((s,j)=>it.a[j]===s.a).length;
+const pts=it=>it.k=='mc'?(okAll(it)?.25:0):[0,.1,.25,.5,1][tfOk(it)];
+function stat(it){if(S.fin||(practice()&&done(it)))return okAll(it)?'ok':'no';if(!practice()&&(it.k=='mc'?it.a!==null:it.a.some(v=>v!==null)))return'ans';return''}
+
+function show(){
+  if(S.scr=='res')return result();
+  const it=S.items[S.idx],n=S.items.length,fx=S.fx;let body='';app.className=S.anim?'an':'';S.anim=S.fx=null;
+  if(it.k=='mc'){
+    const rv=rvMC(it);
+    body=`<p class="q">${esc(it.q)}</p>`+it.opts.map((o,j)=>`<button style="--i:${j}" class="opt ${it.hid&&it.hid.includes(j)?'hid':''} ${fx==='o'+j?'fx':''} ${it.a===j?'sel':''} ${rv&&o.ok?'ok':''} ${rv&&it.a===j&&!o.ok?'no':''}" data-a="pick" data-j="${j}" ${(S.fin||(practice()&&it.a!==null)||(it.hid&&it.hid.includes(j)))?'disabled':''}><b>${'ABCD'[j]}</b><span>${esc(o.t)}</span></button>`).join('');
+    if(rv)body+=`<div class="fb" style="color:var(--${okAll(it)?'ok':'no'})">${okAll(it)?'✓ Chính xác!':'✗ Sai — đáp án đúng: '+'ABCD'[it.opts.findIndex(o=>o.ok)]}</div>`;
+    if(practice()&&!S.fin&&it.a===null&&S.hints>0)body+=`<button class="btn ghost hint" data-a="hint">💡 Gợi ý 50:50 (còn ${S.hints})</button>`;
+  }else{
+    body=`<p class="q">${esc(it.stem[0])}</p>`+it.stem.slice(1).map(t=>`<div class="quote">${esc(t)}</div>`).join('')+`<p class="mut">Chọn Đúng hoặc Sai cho từng ý:</p>`+it.st.map((s,j)=>{
+      const rv=rvTF(it,j),v=it.a[j],good=v===s.a,lock=S.fin||(practice()&&v!==null);
+      return `<div style="--i:${j}" class="st ${fx==='t'+j?'fx':''} ${rv?(good?'ok':'no'):''}"><b>${'abcd'[j]})</b> ${esc(s.t)}<div class="tfb">${[true,false].map(x=>`<button class="${v===x?'sel':''} ${rv&&s.a===x?'ok':''}${rv&&v===x&&!good?'no':''}" data-a="tf" data-j="${j}" data-v="${x}" ${lock?'disabled':''}>${x?'Đúng':'Sai'}</button>`).join('')}</div>${rv?`<div class="fb" style="color:var(--${good?'ok':'no'})">${good?'✓ Chính xác':'✗ Đáp án đúng: '+(s.a?'Đúng':'Sai')}</div>`:''}</div>`}).join('');
+  }
+  const last=S.idx==n-1,right=S.items.filter(it=>stat(it)=='ok').length;
+  app.innerHTML=`<div class="top"><span>${practice()?'📖 Luyện tập':'📝 Kiểm tra'}${S.fin?' · Xem lại':''}</span><span id="tm" class="${S.limit&&S.limit-el()<=60?'warn':''}">${S.fin?'':timeTxt()}</span><span>${practice()&&!S.fin?(S.streak>1?'🔥x'+S.streak+' · ':'')+'Đúng '+right+'/'+S.items.filter(done).length:''}</span></div>
+  <div class="bar"><i style="width:${(S.idx+1)/n*100}%"></i></div>
+  <div class="card"><div class="src"><span>Câu ${S.idx+1}/${n} · ${esc(it.src)}</span><button class="flg ${it.f?'on':''}" data-a="flag">🚩 ${it.f?'Đã đánh dấu':'Đánh dấu'}</button></div>${body}</div>
+  <details class="card"><summary>Danh sách câu (${S.items.filter(done).length}/${n} đã làm)</summary><div class="grid">${S.items.map((x,i)=>`<button class="g ${stat(x)} ${x.f?'fl':''} ${i==S.idx?'cur':''}" data-a="go" data-i="${i}">${i+1}</button>`).join('')}</div></details>
+  <div class="nav"><button class="btn ghost" data-a="prev" ${S.idx?'':'disabled'}>← Trước</button>
+  ${last||!S.fin&&false?'':''}${last?`<button class="btn" data-a="finish">${S.fin?'Xem kết quả':(practice()?'Kết thúc':'Nộp bài')}</button>`:`<button class="btn" data-a="next">Sau →</button>`}</div>`;
+  if(!last&&!S.fin)app.querySelector('.nav').insertAdjacentHTML('beforeend',`<button class="btn ghost" data-a="finish" style="flex:.8">${practice()?'Kết thúc':'Nộp bài'}</button>`);
+}
+
+function finish(force){
+  if(S.fin){S.scr='res';return show()}
+  const un=S.items.filter(it=>!done(it)).length;
+  if(!force&&!practice()&&un){
+    const o=document.createElement('div');o.className='ov';
+    o.innerHTML=`<div class="card"><p class="q">Còn ${un} câu chưa làm xong</p><p class="mut">Nộp bài thì các câu này tính 0 điểm.</p><div class="row"><button class="btn ghost" data-a="close">Làm tiếp</button><button class="btn" data-a="force">Vẫn nộp</button></div></div>`;
+    return document.body.appendChild(o);
+  }
+  if(!practice())S.items.forEach(x=>rec(x,true));
+  S.fin=true;S.dur=(Date.now()-S.t0)/1000|0;clearInterval(timer);S.scr='res';show();
+}
+
+function result(){
+  const it=S.items,mc=it.filter(x=>x.k=='mc'),tf=it.filter(x=>x.k=='tf');
+  const got=it.reduce((s,x)=>s+pts(x),0),max=mc.length*.25+tf.length,t10=max?got/max*10:0;
+  app.innerHTML=`<div class="card score"><div class="rk">${t10>=9?'🏆 Xuất sắc':t10>=8?'🎉 Giỏi':t10>=6.5?'👍 Khá':t10>=5?'🙂 Đạt':'💪 Cố gắng thêm nhé'}</div><div class="mut">Điểm quy đổi (thang 10)</div><div class="n" id="sc">0.00</div>
+  <div>${got.toFixed(2)} / ${max.toFixed(2)} điểm · ⏱ ${fmt(S.dur)}</div></div>
+  <div class="card">${mc.length?`<div>Trắc nghiệm: <b>${mc.filter(okAll).length}/${mc.length}</b> câu đúng (0,25 đ/câu)</div>`:''}
+  ${tf.length?`<div>Đúng/Sai: <b>${tf.reduce((s,x)=>s+tfOk(x),0)}/${tf.length*4}</b> ý đúng (1 ý 0,1 · 2 ý 0,25 · 3 ý 0,5 · 4 ý 1 điểm/câu)</div>`:''}</div>
+  <h2>Chi tiết từng câu</h2><div class="grid">${it.map((x,i)=>`<button class="g ${okAll(x)?'ok':'no'}" data-a="go" data-i="${i}" data-r="1">${i+1}</button>`).join('')}</div>
+  <div class="row" style="margin-top:18px"><button class="btn" data-a="review">Xem lại đáp án</button>${it.some(x=>!okAll(x))?`<button class="btn" data-a="redo">🔁 Làm lại câu sai</button>`:''}<button class="btn ghost" data-a="start">Làm lại (đề mới)</button><button class="btn ghost" data-a="home">Trang chủ</button></div>`;
+  app.className='an';const el=$('#sc'),t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/1100);el.textContent=(t10*(1-Math.pow(1-p,3))).toFixed(2);if(p<1)requestAnimationFrame(f)})(t0);
+  if(!S.shown){S.shown=1;ST.best=Math.max(ST.best,t10);LS.set('st',ST);if(t10>=8){sfx('win','conffeti')}else sfx('end')}
+}
+
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-a]');if(!b||b.disabled)return;
+  const a=b.dataset.a,v=b.dataset.v,j=+b.dataset.j;
+  if(a!='pick'&&a!='tf'&&a!='mute'&&a!='force')sfx(['prev','next','go','start','review','redo'].includes(a)?'swoosh':'tick');
+  if(a=='mode'){cfg.mode=v;home()}
+  else if(a=='bai'){tog(cfg.bai,v);home()}else if(a=='type'){tog(cfg.type,v);home()}
+  else if(a=='sq'||a=='so'||a=='auto'){cfg[a]=b.checked}
+  else if(a=='start')start();else if(a=='home')home();
+  else if(a=='pick'){const it=S.items[S.idx];it.a=j;S.fx='o'+j;fb(it.opts[j].ok);if(practice())rec(it);show();auto(it)}
+  else if(a=='tf'){const it=S.items[S.idx];it.a[j]=v=='true';S.fx='t'+j;fb(it.a[j]===it.st[j].a);if(practice())rec(it);show();auto(it)}
+  else if(a=='hint'){const it=S.items[S.idx];it.hid=shuf(it.opts.map((o,i)=>i).filter(i=>!it.opts[i].ok)).slice(0,2);S.hints--;sfx('flag');show()}
+  else if(a=='flag'){S.items[S.idx].f=!S.items[S.idx].f;show()}
+  else if(a=='wo'){cfg.wo=!cfg.wo;home()}
+  else if(a=='redo'){begin(S.items.filter(x=>!okAll(x)).map(x=>({...x,a:x.k=='mc'?null:x.a.map(()=>null),hid:null,f:false})))}
+  else if(a=='mute'){mute=!mute;try{localStorage.setItem('mute',mute?'1':'0')}catch(e){}$('#mt').textContent=mute?'🔇':'🔊';if(!mute)sfx('tick')}
+  else if(a=='go'){S.idx=+b.dataset.i;S.scr='q';S.anim=true;show();scrollTo(0,0)}
+  else if(a=='prev'){S.idx--;S.anim=true;show();scrollTo(0,0)}else if(a=='next'){S.idx++;S.anim=true;show();scrollTo(0,0)}
+  else if(a=='finish')finish();else if(a=='force'){document.querySelector('.ov')?.remove();finish(true)}
+  else if(a=='close')document.querySelector('.ov')?.remove();
+  else if(a=='review'){S.idx=0;S.scr='q';S.anim=true;show()}
+});
+addEventListener('keydown',e=>{if(!S||S.scr!='q'||e.target.tagName=='INPUT')return;const k=e.key.toLowerCase(),j='abcd'.indexOf(k)>=0?'abcd'.indexOf(k):'1234'.indexOf(k),q=s=>document.querySelector(s);
+ if(j>=0&&S.items[S.idx].k=='mc'){const b=q('[data-a=pick][data-j="'+j+'"]');b&&b.click()}else if(k=='arrowright')q('[data-a=next]')?.click();else if(k=='arrowleft')q('[data-a=prev]')?.click();else if(k=='f')q('[data-a=flag]')?.click()});
+$('#mt').textContent=mute?'🔇':'🔊';home();
+</script></body></html>
