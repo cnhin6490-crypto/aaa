@@ -70,6 +70,19 @@ summary{cursor:pointer;font-weight:700}
 .upload-btn{display:inline-block;padding:4px 8px;background:var(--sel);border:1.5px dashed var(--pri);border-radius:8px;cursor:pointer;font-size:12px;font-weight:600;color:var(--pri);text-align:center}
 .upload-btn input{display:none}
 
+/* Chữ Yuki tròn trịa, dễ thương */
+.yuki-simple {
+  font-family: "Fredoka", "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1;
+  color: #e63946;
+  margin-bottom: 8px;
+  display: inline-block;
+  transition: color .8s ease;
+}
+
 @keyframes toast{0%{opacity:0;transform:translate(-50%,12px)}15%,80%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-12px)}}
 @keyframes pulse{50%{opacity:.45}}
 @keyframes rise{from{opacity:0;transform:translateY(16px)}}
@@ -80,7 +93,7 @@ summary{cursor:pointer;font-weight:700}
 @keyframes float{to{transform:translate(70px,60px) scale(1.2)}}
 @media(prefers-reduced-motion:reduce){*,::before,::after{animation:none!important;transition:none!important}}
 </style>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet"></head><body>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&family=Fredoka:wght@500;600&display=swap" rel="stylesheet"></head><body>
 
 <!-- Nút icon loa ở góc trên -->
 <button class="mt" id="mt" aria-label="Bật/tắt âm thanh">🔊</button>
@@ -222,7 +235,9 @@ const tog=(arr,v)=>{const i=arr.indexOf(v);i>=0?arr.splice(i,1):arr.push(v)};
 function home(){
   clearInterval(timer);S=null;
   const n=pool().length;
-  app.innerHTML=`<h1><span class="grad">Ôn thi Lịch sử 12</span><br>ASEAN 🌏</h1>
+  app.innerHTML=`
+  <div class="yuki-simple">Yuki</div>
+  <h1><span class="grad">Ôn thi Lịch sử 12</span><br>ASEAN 🌏</h1>
   <div class="mut">${D.mcq.length} câu trắc nghiệm · ${D.tf.length} câu đúng/sai · Bài 4 &amp; Bài 5</div>${statsHTML()}
 
   <h2>Chế độ</h2><div class="row">
@@ -336,6 +351,17 @@ document.addEventListener('click',e=>{
 });
 addEventListener('keydown',e=>{if(!S||S.scr!='q'||e.target.tagName=='INPUT')return;const k=e.key.toLowerCase(),j='abcd'.indexOf(k)>=0?'abcd'.indexOf(k):'1234'.indexOf(k),q=s=>document.querySelector(s);
  if(j>=0&&S.items[S.idx].k=='mc'){const b=q('[data-a=pick][data-j="'+j+'"]');b&&b.click()}else if(k=='arrowright')q('[data-a=next]')?.click();else if(k=='arrowleft')q('[data-a=prev]')?.click();else if(k=='f')q('[data-a=flag]')?.click()});
+
+const yukiColors=['#e63946','#f97316','#c58b00','#16a34a','#0891b2','#2563eb','#7c3aed','#db2777'];
+let yukiColorIndex=-1;
+setInterval(()=>{
+  const label=$('.yuki-simple');
+  if(!label)return;
+  let next;
+  do{next=Math.random()*yukiColors.length|0}while(next===yukiColorIndex);
+  yukiColorIndex=next;
+  label.style.color=yukiColors[next];
+},1100);
 
 initMusicPlayer();
 home();
